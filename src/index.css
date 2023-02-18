@@ -1,13 +1,173 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  font-size: 16px; 
+
 }
+nav.dark  :root {
+  background-color: #282D35;
+
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 8%;
+  font-size: 1.2rem;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  color: #000;
+  /*show the box shadow*/
+  position: relative; 
+  z-index: 2;
+
+  
+}
+
+nav.dark {
+  background-color: #21222A;
+  color: #fff;
+}
+
+nav > h3{
+  margin: 0 auto 0 7px;  /*margin-right auto push the content to the right away*/
+  color: #61DAFB;
+}
+.nav-logo{
+  width:50px; 
+}
+.nav-items{
+  list-style: none;
+  display: flex;
+  gap: 90px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+
+}
+
+.toggler {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+
+}
+
+.toggler p {
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+
+.toggler--slider {
+  width: 25px;
+  height: 13px;
+  background-color: #2B283A;
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: content-box;
+
+}
+
+nav.dark .toggler--slider {
+  border-color: white;
+  background-color: #F5F5F5;
+}
+
+.toggler--slider--circle {
+  height: 13px;
+  width: 13px;
+  background-color: white;
+  border-radius: 50%;
+
+}
+
+nav.dark .toggler--slider--circle {
+  background-color: black;
+}
+
+.toggler--light {
+  color: #2B283A;
+}
+
+nav.dark .toggler--light {
+  color: #918E9B;
+}
+
+.toggler--dark {
+  color: #D5D4D8;
+}
+
+nav.dark .toggler-dark {
+  color: #FFFFFF;
+}
+
+nav.dark .toggler--slider {
+  justify-content: flex-end; /*move slider*/
+
+}
+
+/*Main*/
+
+main{
+  padding: 60px 8%;  
+  background-color: white;
+  height: 100vh;
+  flex: 1 1 auto;
+  /* background-image: url(./images/reactjs-icon\ 2.png) ;
+  background-repeat: no-repeat;
+  background-position-x:right ;
+  background-position-y:center ; */
+}
+
+main.dark {
+  background-color: #282D35;
+  color: white;    
+}
+
+main h1{
+  letter-spacing: 0.4rem;
+}
+main > ul{
+  margin-top: 20px;
+  padding: 0 0 20px 40px;
+}
+main > ul > li{
+  padding-block: 15px;  /*specify padding on the top and bottom in one go*/
+}
+main > ul > li::marker{
+  font-size: 1.5rem;
+  color: #61DAFB;
+}
+
+main > img{
+  position: absolute;
+  top: 230px;
+  right:0px;
+  height: 400px;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  padding: 50px 8%;
+  width: 100vw;
+  background-color: grey;
+  color: #fff;
+
+}
+
+
