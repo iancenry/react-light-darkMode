@@ -126,7 +126,9 @@ main{
   background-color: white;
   height: 100vh;
   flex: 1 1 auto;
-  /* background-image: url(./images/reactjs-icon\ 2.png) ;
+  /*
+  can use this instead of using main > img and styling image in page directly
+   background-image: url(./images/reactjs-icon\ 2.png) ;
   background-repeat: no-repeat;
   background-position-x:right ;
   background-position-y:center ; */
